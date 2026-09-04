@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container header-inner">
         <a href="#hero" className="logo" onClick={(e) => handleNavClick(e, '#hero')}>
           <img
-            src="public/lovo_logo1_bkgrd_removed.PNG"
+            src="/lovo_logo1_bkgrd_removed.PNG"
             alt="LoVo Advertising"
             className="logo-image"
           />
