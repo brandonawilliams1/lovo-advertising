@@ -84,13 +84,13 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { platform: 'X', href: '#', color: '#000000' },
-  { platform: 'TikTok', href: '#', color: '#000000' },
-  { platform: 'YouTube', href: '#', color: '#FF0000' },
-  { platform: 'Facebook', href: '#', color: '#1877F2' },
-  { platform: 'Snapchat', href: '#', color: '#FFFC00' },
-  { platform: 'Instagram', href: '#', color: '#E4405F' },
-  { platform: 'Pinterest', href: '#', color: '#BD081C' },
+  { platform: 'X', href: 'https://x.com/lovoadvertising', color: '#000000' },
+  { platform: 'TikTok', href: 'https://www.tiktok.com/@lovoadvertising?is_from_webapp=1&sender_device=pc', color: '#000000' },
+  { platform: 'YouTube', href: 'https://www.youtube.com/channel/UC3gGhcdZgY-VguUdWdZ7eaQ', color: '#FF0000' },
+  { platform: 'Facebook', href: 'https://www.facebook.com/share/1BD6m3YV33/', color: '#1877F2' },
+  { platform: 'Snapchat', href: 'https://www.snapchat.com/@lovoadvertising', color: '#FFFC00' },
+  { platform: 'Instagram', href: 'https://www.instagram.com/lovoadvertising/', color: '#E4405F' },
+  { platform: 'Pinterest', href: 'https://pin.it/446kAKDvM', color: '#BD081C' },
 ];
 
 export const QUOTE_BODY = `We are reaching out to inquire about your LED mobile advertising truck services. Our company is planning an advertising campaign and would like to request a detailed quotation based on the following requirements:

@@ -21,6 +21,8 @@ export default function Social() {
               className="social-card"
               key={social.platform}
               aria-label={`Visit our ${social.platform} profile`}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <SocialIcon platform={social.platform} />
               <span className="social-name">{social.platform}</span>
