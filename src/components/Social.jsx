@@ -1,7 +1,7 @@
 import { SOCIAL_LINKS } from '../data/content';
 import '../styles/social.css';
 
-export default function Social() {
+export default function Social({ onNavigateAbout }) {
   return (
     <section id="social" className="section social-section">
       <div className="container">
@@ -39,6 +39,18 @@ export default function Social() {
             alt="LoVo Advertising"
             className="footer-logo"
           />
+          <div className="footer-links">
+            <a
+              href="#about"
+              className="footer-link"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigateAbout();
+              }}
+            >
+              About Us
+            </a>
+          </div>
           <span className="footer-copy">Low Voltage. High Impact. &copy; 2026</span>
         </div>
       </footer>

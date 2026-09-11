@@ -4,7 +4,7 @@ import { NAV_LINKS } from '../data/content';
 import { useScrolled } from '../hooks/useScrollReveal';
 import '../styles/header.css';
 
-export default function Header() {
+export default function Header({ onNavigateAbout, onNavigateHome }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const scrolled = useScrolled(40);
 
@@ -15,10 +15,21 @@ export default function Header() {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    onNavigateHome();
+  };
+
+  const handleAboutClick = (e) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    onNavigateAbout();
+  };
+
   return (
     <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container header-inner">
-        <a href="#hero" className="logo" onClick={(e) => handleNavClick(e, '#hero')}>
+        <a href="#hero" className="logo" onClick={handleLogoClick}>
           <img
             src="/lovo_logo1_bkgrd_removed.PNG"
             alt="LoVo Advertising"
@@ -55,6 +66,17 @@ export default function Header() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="#about"
+                  onClick={handleAboutClick}
+                  role="menuitem"
+                >
+                  <span className="dropdown-num">06</span>
+                  <span className="dropdown-label">About Us</span>
+                  <Icon name="arrow" size={16} className="dropdown-arrow" />
+                </a>
+              </li>
             </ul>
           </nav>
         )}

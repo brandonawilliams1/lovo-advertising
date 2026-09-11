@@ -94,6 +94,23 @@
   display: block;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-neutral-400);
+  transition: color 0.25s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-400);
+}
+
 .footer-copy {
   font-size: 13px;
   color: var(--color-neutral-600);
