@@ -1,1 +1,1 @@
-# lovo-advertising
+# LoVo Advertising
