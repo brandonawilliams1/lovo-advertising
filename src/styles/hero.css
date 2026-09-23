@@ -159,7 +159,8 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  z-index: 2;
+  z-index: 3;
+  pointer-events: none;
 }
 
 .hero-scroll span {
@@ -176,6 +177,27 @@
   animation: fadeIn 1.5s ease infinite alternate;
 }
 
+/* Tighten up spacing earlier than 768px so medium/tablet-ish widths
+   (e.g. ~800px, especially in shorter viewports) don't stack content
+   tall enough to push into or past the scroll indicator. */
+@media (max-width: 900px) {
+  .hero {
+    padding: 100px 0 64px;
+  }
+  .hero-badge {
+    margin-bottom: 24px;
+  }
+  .hero-title {
+    margin-bottom: 18px;
+  }
+  .hero-tagline {
+    margin-bottom: 28px;
+  }
+  .hero-actions {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-stats {
     gap: 20px;
@@ -188,5 +210,14 @@
   }
   .hero-actions {
     margin-bottom: 48px;
+  }
+}
+
+/* On short viewports (landscape phones/tablets, or any window where
+   the hero content stack is taller than the visible area), drop the
+   scroll cue entirely rather than let it overlap the content below it. */
+@media (max-height: 700px) {
+  .hero-scroll {
+    display: none;
   }
 }
