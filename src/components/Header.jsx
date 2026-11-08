@@ -128,7 +128,7 @@ export default function Header() {
       <div className="container header-inner">
         <Link to="/" className="logo" onClick={handleLogoClick}>
           <img
-            src="/lovo_logo1_bkgrd_removed.webp"
+            src="/lovo_logo1_bkgrd_removed.PNG"
             alt="LoVo Advertising"
             className="logo-image"
           />

@@ -122,7 +122,7 @@ export default function Social() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <img
-            src="/lovo_logo1_bkgrd_removed.webp"
+            src="/lovo_logo1_bkgrd_removed.PNG"
             alt="LoVo Advertising"
             className="footer-logo"
           />

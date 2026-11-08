@@ -1,6 +1,6 @@
-import truck1 from '../assets/led_truck5.webp';
-import truck2 from '../assets/led_truck4.webp';
-import truck3 from '../assets/led_truck3.webp';
+import truck1 from '../assets/led_truck5.jpg';
+import truck2 from '../assets/led_truck4.jpg';
+import truck3 from '../assets/led_truck3.jpg';
 
 export const IMAGES = {
   hero: 'https://images.pexels.com/photos/1058276/pexels-photo-1058276.jpeg?auto=compress&cs=tinysrgb&w=1600',
